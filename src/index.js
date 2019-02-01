@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// Square Function Component
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -9,7 +10,7 @@ function Square(props) {
     </button>
   )
 }
-
+// Board Component
 class Board extends React.Component {
   constructor(props) {
     super(props)
@@ -63,6 +64,7 @@ class Board extends React.Component {
     );
   }
 }
+// Game Component
 class Game extends React.Component {
   render() {
     return (
